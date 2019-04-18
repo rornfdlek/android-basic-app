@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextActivity">
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:padding="10dp"
+        android:background="#B49C7B"
+        android:textColor="#ffffff"
+        android:text="Bake Toast"
+        android:textSize="13dp"
+        />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_toast"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="#F8774E"
+        android:textColor="#ffffff"
+        android:text="back"
+        android:textSize="13dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_close"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <EditText
+            android:id="@+id/et_choice"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:hint="원하는 동작 입력"
+            />
+
+        <Button
+            android:id="@+id/btn_choice"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/et_choice"
+            android:layout_gravity="center_vertical"
+            android:background="#FFC637"
+            android:text="RUN!"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
